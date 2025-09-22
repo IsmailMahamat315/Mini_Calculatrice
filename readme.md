@@ -15,7 +15,6 @@ Permettre à un agriculteur de :
 
 ## 🧮 Formule utilisée
 
-txt
 Marge bénéficiaire = Prix de vente - Coût de production total
 
 ## Lancement local
@@ -29,12 +28,23 @@ Git installé (pour cloner le dépôt)
 
 Étapes
 # 1. Cloner le projet
-git clone git@github.com:IsmailMahamat315/Mini_Calculatrice.git
+git clone https://github.com/IsmailMahamat315/Mini_Calculatrice.git
 # 2. Ouvrir le projet
 cd Mini_Calculatrice
 
 # 3. Lancer dans le navigateur
 # Ouvrir index.html ou utiliser Live Server (VS Code)
+# capture ecran 
+
+
+<img width="437" height="437" alt="Capture d’écran du 2025-09-22 22-59-07" src="https://github.com/user-attachments/assets/3638d55e-f174-4d06-91a1-37b44fc20711" />
+<img width="437" height="437" alt="Capture d’écran du 2025-09-22 22-59-20" src="https://github.com/user-attachments/assets/ab076f21-1976-4ebd-bdae-8dddb2c28fdb" />
+<img width="437" height="437" alt="Capture d’écran du 2025-09-22 22-59-38" src="https://github.com/user-attachments/assets/669f6bd9-4d30-4e70-be41-21f652032918" />
+
+<img width="437" height="437" alt="Capture d’écran du 2025-09-22 22-59-59" src="https://github.com/user-attachments/assets/b6afaf49-fc07-4158-877c-42607e1c4d70" />
+
+
+
 
 💻 Technologies utilisées
 
