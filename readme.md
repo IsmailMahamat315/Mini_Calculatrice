@@ -42,4 +42,4 @@ HTML5 (sémantique)
 
 CSS3 (responsive, flexbox)
 
-JavaScript ES6 (DOM, fonctions)
+JavaScript ES6 (DOM, fonctions)git
