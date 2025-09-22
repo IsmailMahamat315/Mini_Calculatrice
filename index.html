@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mini Calculatrice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="calculatrice">
+        <h1>Mini Calculatrice</h1>
+        <form id="formulaire" onsubmit="return false;">
+            <div class="inputs">
+                <input type="number" id="element1" placeholder="Premier nombre" aria-label="Premier nombre">
+                <input type="number" id="element2" placeholder="Deuxième nombre" aria-label="Deuxième nombre">
+            </div>
+
+            <div class="boutons">
+                <button type="button" onclick="calcul('+')">+</button>
+                <button type="button" onclick="calcul('-')">−</button>
+                <button type="button" onclick="calcul('*')">×</button>
+                <button type="button" onclick="calcul('/')">÷</button>
+            </div>
+        </form>
+
+        <div class="resultat" id="resultat">Résultat : <span id="valeur-resultat">---</span></div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
