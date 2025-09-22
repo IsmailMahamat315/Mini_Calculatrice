@@ -1,37 +1,30 @@
-function calcul(operation) {
-    const champ1 = parseFloat(document.getElementById("element1").value);
-    const champ2 = parseFloat(document.getElementById("element2").value);
-    const valeurResultat = document.getElementById("valeur-resultat");
-    let resultat;
-
-    // Vérification des champs
-    if (isNaN(champ1) || isNaN(champ2)) {
-        valeurResultat.textContent = "Veuillez entrer deux nombres valides.";
-        return;
+function calculerMarge() {
+    const cout = parseFloat(document.getElementById("cout").value);
+    const vente = parseFloat(document.getElementById("vente").value);
+    const resultat = document.getElementById("valeur-resultat");
+    const message = document.getElementById("message");
+  
+    // Vérification des entrées
+    if (isNaN(cout) || isNaN(vente)) {
+      resultat.textContent = "---";
+      message.textContent = "Veuillez entrer des valeurs valides.";
+      message.style.color = "red";
+      return;
     }
-
-    // Opération
-    switch (operation) {
-        case "+":
-            resultat = champ1 + champ2;
-            break;
-        case "-":
-            resultat = champ1 - champ2;
-            break;
-        case "*":
-            resultat = champ1 * champ2;
-            break;
-        case "/":
-            if (champ2 === 0) {
-                valeurResultat.textContent = "Erreur : division par zéro !";
-                return;
-            }
-            resultat = champ1 / champ2;
-            break;
-        default:
-            valeurResultat.textContent = "Opération invalide.";
-            return;
+  
+    const marge = vente - cout;
+    resultat.textContent = marge.toFixed(2) + " €";
+  
+    // Message selon le résultat
+    if (marge > 0) {
+      message.textContent = " Vous réalisez un bénéfice.";
+      message.style.color = "green";
+    } else if (marge === 0) {
+      message.textContent = "Vous êtes à l'équilibre.";
+      message.style.color = "orange";
+    } else {
+      message.textContent = " Vous êtes en perte.";
+      message.style.color = "red";
     }
-
-    valeurResultat.textContent = resultat;
-}
+  }
+  

@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mini Calculatrice</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculatrice de Marge</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <main class="calculatrice">
-        <h1>Mini Calculatrice</h1>
-        <form id="formulaire" onsubmit="return false;">
-            <div class="inputs">
-                <input type="number" id="element1" placeholder="Premier nombre" aria-label="Premier nombre">
-                <input type="number" id="element2" placeholder="Deuxième nombre" aria-label="Deuxième nombre">
-            </div>
+  <main class="calculatrice">
+    <h1>Calculatrice de Marge Bénéficiaire</h1>
 
-            <div class="boutons">
-                <button type="button" onclick="calcul('+')">+</button>
-                <button type="button" onclick="calcul('-')">−</button>
-                <button type="button" onclick="calcul('*')">×</button>
-                <button type="button" onclick="calcul('/')">÷</button>
-            </div>
-        </form>
+    <form id="formulaire" onsubmit="return false;">
+      <div class="inputs">
+        <input
+          type="number"
+          id="cout"
+          placeholder="Coût de production (€)"
+          required
+        />
+        <input
+          type="number"
+          id="vente"
+          placeholder="Prix de vente (€)"
+          required
+        />
+      </div>
 
-        <div class="resultat" id="resultat">Résultat : <span id="valeur-resultat">---</span></div>
-    </main>
+      <button type="button" onclick="calculerMarge()">Calculer</button>
+    </form>
 
-    <script src="main.js"></script>
+    <div class="resultat" id="resultat">Résultat : <span id="valeur-resultat">---</span></div>
+    <div id="message"></div>
+  </main>
+
+  <script src="main.js"></script>
 </body>
 </html>
